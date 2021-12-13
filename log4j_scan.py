@@ -1,4 +1,4 @@
-#! /bin/bash
+#! /bin/python
 
 import os
 import requests
